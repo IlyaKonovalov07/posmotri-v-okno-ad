@@ -76,13 +76,13 @@ ol {
   object-position: center;
 }
 
-
+/* меню ниже видео */
 .search-form {
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
-
+/* город */
 .search-form__fieldset {
   display: grid;
   gap: 5px;
@@ -93,7 +93,7 @@ ol {
   font-size: 18px;
   font-weight: 400;
 }
-
+/* галочки */
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -103,7 +103,7 @@ ol {
   display: flex;
   gap: 5px;
 }
-
+/* утро день ночь */
 .search-form__label-text {
   cursor: pointer;
 }
@@ -115,12 +115,14 @@ ol {
 
 .search-form__checkbox-list .search-form__label:hover {
   text-decoration: underline;
+  /* толщина подчеркивания */
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
 .search-form__textfield {
   appearance: none;
+  /* прозрачный фон */
   background: transparent;
   border: none;
   border-top: 1px solid #FFF;
@@ -144,6 +146,7 @@ ol {
   border: 1px solid #FFF;
 }
 
+/* галочки */
 .search-form__pseudo-checkbox {
   inline-size: 19px;
   block-size: 19px;
@@ -181,7 +184,7 @@ ol {
 }
 
 .button:active {
-  /* фон при нажатии */
+  /* меняет фон при нажатии */
   background-color: #545050;
 }
 
@@ -191,7 +194,9 @@ ol {
 
 .search-form__submit-button:hover {
     text-decoration: underline;
+    /* толщина подчеркивания */
     text-decoration-thickness: 1px;
+    /* отступ подчеркивания */
     text-underline-offset: 2px;
 }
 
@@ -272,17 +277,18 @@ ol {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
+  /* эл-т не сжимается */
   flex-shrink: 0;
   object-fit: cover;
   object-position: center;
 }
-
+/* блок с городами */
 .content__list-item {
   display: grid;
 }
 
 .content__video-card-description-container {
-  /* какую долю пространства занимает */
+  /* занимает все доступное пространство */
   flex-grow: 1;
 }
 
@@ -303,8 +309,10 @@ ol {
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
+  /* обрезает текст без прокрутки */
   overflow: hidden;
   clip: rect(0 0 0 0);
+  /* ограничивает область */
   clip-path: inset(50%);
   /* Запрещает перенос текста */
   white-space: nowrap;
